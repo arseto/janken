@@ -9,11 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.arseto.janken.MainActivity">
 
+    <TextView
+        android:text="Opponent"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opponent_tv"/>
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:background="@android:color/white"
-        android:id="@+id/hand_iv" />
+        android:layout_below="@+id/opponent_tv"
+        android:id="@+id/opponent_iv" />
+    <TextView
+        android:text="You"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opponent_iv"
+        android:id="@+id/you_tv"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/you_tv"
+        android:id="@+id/you_iv" />
     <Button
         android:layout_width="match_parent"
         android:id="@+id/start_btn"
@@ -21,7 +41,7 @@
         android:textColor="@android:color/white"
         android:background="@android:color/holo_blue_dark"
         android:text="PON!"
-        android:layout_below="@+id/hand_iv"
+        android:layout_below="@+id/you_iv"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>
